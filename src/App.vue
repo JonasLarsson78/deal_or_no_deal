@@ -1,6 +1,11 @@
 <template>
   <div class="game-container">
-    <h1>Deal or No Deal</h1>
+    <div class="header">
+      <h1>Deal or No Deal</h1>
+      <button v-if="gameState !== 'welcome' && gameState !== 'game-over'" class="quit-button" @click="confirmQuit">
+        Avbryt spel
+      </button>
+    </div>
 
     <!-- Welcome Screen -->
     <WelcomeScreen v-if="gameState === 'welcome'" @start="startGame" />
@@ -74,6 +79,12 @@ const {
   swapCase,
   resetGame
 } = useGameState()
+
+function confirmQuit() {
+  if (confirm('Är du säker på att du vill avbryta spelet? Allt framsteg kommer att försvinna.')) {
+    resetGame()
+  }
+}
 </script>
 
 <style scoped>
@@ -85,12 +96,47 @@ const {
   min-height: 100vh;
 }
 
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 h1 {
   text-align: center;
   color: #d4af37;
   font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px;
+  margin: 0;
+}
+
+.quit-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #e63946, #c1121f);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.quit-button:hover {
+  background: linear-gradient(135deg, #d62828, #9d0208);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.quit-button:active {
+  transform: translateY(-50%) scale(0.98);
 }
 
 .bank-offer-overlay {
@@ -105,6 +151,27 @@ h1 {
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+
+  .quit-button {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .quit-button:hover {
+    transform: scale(1.05);
+  }
+
+  .quit-button:active {
+    transform: scale(0.98);
   }
 }
 </style>
