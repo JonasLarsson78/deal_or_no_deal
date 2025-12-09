@@ -91,7 +91,7 @@ function confirmQuit() {
 .game-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Arial', sans-serif;
   min-height: 100vh;
 }
@@ -101,13 +101,13 @@ function confirmQuit() {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h1 {
   text-align: center;
   color: #d4af37;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
 }

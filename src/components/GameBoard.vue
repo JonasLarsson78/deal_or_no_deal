@@ -72,13 +72,13 @@ const highAmounts = computed(() => {
 
 <style scoped>
 .game-screen {
-  padding: 20px;
+  padding: 10px;
 }
 
 .round-info {
   text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
@@ -86,24 +86,25 @@ const highAmounts = computed(() => {
 .round-info h2 {
   color: #d4af37;
   margin: 0;
+  font-size: 1.3rem;
 }
 
 .round-info p {
   color: #fff;
-  font-size: 1.2rem;
-  margin: 10px 0 0 0;
+  font-size: 1rem;
+  margin: 5px 0 0 0;
 }
 
 .game-content {
   display: grid;
-  grid-template-columns: 250px 1fr 250px;
-  gap: 30px;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 15px;
 }
 
 .center-area {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 .player-case {
@@ -112,20 +113,21 @@ const highAmounts = computed(() => {
 
 .player-case h3 {
   color: #d4af37;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .player-case :deep(.briefcase) {
-  max-width: 150px;
+  max-width: 120px;
   margin: 0 auto;
 }
 
 .briefcases-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  margin: 20px 0;
-  max-width: 900px;
+  gap: 10px;
+  margin: 10px 0;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

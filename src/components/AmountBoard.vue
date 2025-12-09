@@ -28,28 +28,30 @@ function formatAmount(amount: number): string {
 <style scoped>
 .amounts-board {
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
 .amounts-board h3 {
   color: #d4af37;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .amounts-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 
 .amount-item {
   color: #fff;
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
+  font-size: 0.85rem;
   transition: all 0.3s;
 }
 
