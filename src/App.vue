@@ -94,6 +94,9 @@ function confirmQuit() {
   padding: 10px;
   font-family: 'Arial', sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .header {
