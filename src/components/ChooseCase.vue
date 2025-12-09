@@ -63,4 +63,33 @@ const emit = defineEmits<{
   background: linear-gradient(145deg, #3a1f13, #5a3420);
   border-color: #d4af37;
 }
+
+@media (max-width: 768px) {
+  .choose-case {
+    padding: 20px 10px;
+  }
+
+  .choose-case h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .briefcases-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .choose-case :deep(.briefcase:hover) {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .briefcases-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+}
 </style>

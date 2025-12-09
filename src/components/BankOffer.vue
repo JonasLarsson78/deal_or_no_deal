@@ -98,11 +98,55 @@ function formatAmount(amount: number): string {
 
 @media (max-width: 768px) {
   .bank-offer {
-    padding: 40px 50px;
+    padding: 30px 20px;
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .bank-offer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .offer-amount {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .bank-offer p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .offer-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn-deal,
+  .btn-no-deal {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bank-offer {
+    padding: 20px 15px;
+  }
+
+  .bank-offer h2 {
+    font-size: 1.3rem;
+  }
+
+  .offer-amount {
+    font-size: 1.5rem;
+  }
+
+  .bank-offer p {
+    font-size: 1rem;
   }
 }
 </style>

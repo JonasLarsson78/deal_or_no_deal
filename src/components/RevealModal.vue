@@ -118,11 +118,43 @@ function formatAmount(amount: number): string {
 
 @media (max-width: 768px) {
   .reveal-modal {
-    padding: 40px 50px;
+    padding: 30px 25px;
+    max-width: 85%;
+  }
+
+  .reveal-case-number {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
   }
 
   .reveal-amount {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  .btn-continue {
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reveal-modal {
+    padding: 25px 20px;
+  }
+
+  .reveal-case-number {
+    font-size: 1rem;
+  }
+
+  .reveal-amount {
+    font-size: 2rem;
+  }
+
+  .btn-continue {
+    padding: 10px 30px;
+    font-size: 0.9rem;
   }
 }
 </style>

@@ -182,9 +182,82 @@ function formatAmount(amount: number): string {
 }
 
 @media (max-width: 768px) {
+  .final-choice {
+    padding: 30px 15px;
+  }
+
+  .final-choice h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .final-choice p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .remaining-amounts {
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  .remaining-amounts h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .amounts-display {
+    gap: 10px;
+  }
+
+  .amount-badge {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
   .final-cases {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .final-cases .briefcase {
+    min-width: 150px;
+    min-height: 120px;
+    padding: 15px 20px 12px 20px;
+  }
+
+  .final-cases .briefcase span {
+    font-size: 0.9rem;
+  }
+
+  .final-cases .briefcase div {
+    font-size: 1.2rem;
+  }
+
+  .final-cases .briefcase:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .final-choice h2 {
+    font-size: 1.3rem;
+  }
+
+  .final-choice p {
+    font-size: 0.9rem;
+  }
+
+  .amount-badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .final-cases .briefcase {
+    min-width: 130px;
+    min-height: 100px;
   }
 }
 </style>

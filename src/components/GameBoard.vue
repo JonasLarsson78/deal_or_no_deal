@@ -135,12 +135,57 @@ const highAmounts = computed(() => {
 @media (max-width: 1024px) {
   .game-content {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .briefcases-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .game-screen {
+    padding: 5px;
+  }
+
+  .round-info {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .round-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .round-info p {
+    font-size: 0.9rem;
+  }
+
+  .game-content {
+    gap: 8px;
+  }
+
   .briefcases-grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+
+  .player-case h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .player-case :deep(.briefcase) {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .briefcases-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
   }
 }
 </style>

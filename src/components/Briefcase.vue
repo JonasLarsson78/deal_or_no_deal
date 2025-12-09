@@ -90,4 +90,35 @@ const handleClick = () => {
   background: linear-gradient(145deg, #8b7355, #a0855b);
   border-color: #6d5d45;
 }
+
+@media (max-width: 768px) {
+  .briefcase {
+    padding: 12px 15px 10px 15px;
+    font-size: 1rem;
+    border-width: 1.5px;
+  }
+
+  .briefcase::before {
+    width: 25px;
+    height: 8px;
+    top: -6px;
+  }
+
+  .briefcase.clickable:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .briefcase {
+    padding: 10px 12px 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .briefcase::before {
+    width: 20px;
+    height: 6px;
+    top: -5px;
+  }
+}
 </style>

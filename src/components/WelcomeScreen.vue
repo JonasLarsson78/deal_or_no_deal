@@ -49,4 +49,39 @@ const emit = defineEmits<{
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+  .welcome-screen {
+    padding: 40px 15px;
+  }
+
+  .welcome-screen h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .welcome-screen p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-screen {
+    padding: 30px 10px;
+  }
+
+  .welcome-screen h2 {
+    font-size: 1.3rem;
+  }
+
+  .welcome-screen p {
+    font-size: 0.9rem;
+  }
+}
 </style>

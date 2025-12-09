@@ -85,8 +85,61 @@ function formatAmount(amount: number): string {
 }
 
 @media (max-width: 768px) {
+  .game-over {
+    padding: 40px 20px;
+    margin: 50px auto;
+    max-width: 90%;
+  }
+
+  .game-over h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .result p {
+    font-size: 1rem;
+  }
+
   .final-amount {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 25px 0;
+  }
+
+  .case-reveal {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-over {
+    padding: 30px 15px;
+    margin: 30px auto;
+  }
+
+  .game-over h2 {
+    font-size: 1.3rem;
+  }
+
+  .result p {
+    font-size: 0.9rem;
+  }
+
+  .final-amount {
+    font-size: 1.5rem;
+  }
+
+  .case-reveal {
+    font-size: 0.85rem;
+  }
+
+  .btn-primary {
+    padding: 10px 25px;
+    font-size: 1rem;
   }
 }
 </style>

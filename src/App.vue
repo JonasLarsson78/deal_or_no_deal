@@ -149,21 +149,26 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .game-container {
+    padding: 5px;
+  }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .quit-button {
     position: static;
     transform: none;
     margin-top: 10px;
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 
   .header {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-bottom: 10px;
   }
 
   .quit-button:hover {
@@ -172,6 +177,17 @@ h1 {
 
   .quit-button:active {
     transform: scale(0.98);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .quit-button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
   }
 }
 </style>
